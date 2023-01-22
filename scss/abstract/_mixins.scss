@@ -1,0 +1,7 @@
+@use 'typography' as typ;
+
+@mixin default-font() {
+    font-size: typ.$default-fs;
+    font-family: typ.$default-ff;
+    font-weight: typ.$text-fw;
+}

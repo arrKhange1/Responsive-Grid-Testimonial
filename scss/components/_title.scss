@@ -1,0 +1,12 @@
+@use '../abstract/typography' as typ;
+@use '../abstract/colors' as colors;
+
+.title {
+    font-weight: typ.$title-fw;
+    
+    &--small {
+        margin-bottom: 0.25rem;
+    }
+
+    
+}

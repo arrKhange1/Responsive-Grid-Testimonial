@@ -1,12 +1,9 @@
-@use '../abstract/typography' as typ;
-@use '../abstract/colors' as colors;
+@use '../abstract/mixins';
 
 .title {
-    font-weight: typ.$title-fw;
+    @include mixins.font(barlow-semi-condensed, mediumer, weight);
     
     &--small {
         margin-bottom: 0.25rem;
     }
-
-    
 }

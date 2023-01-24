@@ -1,6 +1,18 @@
 @import 'https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap';
 
 $default-fs: 13px;
-$default-ff: 'Barlow Semi Condensed', sans-serif;
-$title-fw: 600;
-$text-fw: 500;
+
+$font-stack: (
+    barlow-semi-condensed: (
+        medium: (
+            family: (Barlow Semi Condensed, sans-serif),
+            weight: 500,
+            style: normal
+        ),
+        mediumer: (
+            family: (Barlow Semi Condensed, sans-serif),
+            weight: 600,
+            style: normal
+        )
+    )
+)

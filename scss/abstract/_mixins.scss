@@ -1,7 +1,14 @@
 @use 'typography' as typ;
+@use 'functions';
 
-@mixin default-font() {
-    font-size: typ.$default-fs;
-    font-family: typ.$default-ff;
-    font-weight: typ.$text-fw;
-}
+@mixin font($group, $variant: regular, $properties: family weight style, $font-stack: typ.$font-stack) {
+    $font-properties: functions.font-props($font-stack, $group, $variant);
+
+    @if $font-properties {
+      @each $property, $values in $font-properties {
+        @if functions.contain-prop($properties, $property) {
+          font-#{$property}: map-get($font-properties, $property);
+        }
+      }
+    }
+  }

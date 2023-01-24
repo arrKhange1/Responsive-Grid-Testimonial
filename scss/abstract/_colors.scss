@@ -1,13 +1,19 @@
 $mod-violet: hsl(263, 55%, 52%);
 $dark-grayish-blue: hsl(217, 19%, 35%);
 $dark-blackish-blue: hsl(219, 29%, 14%);
-$white: hsl(0, 0%, 100%);
-
 
 $gray: hsl(0, 0%, 81%);
 $light-gray: hsl(210, 46%, 95%);
 
-$light-gray-paragraph: hsl(210, 46%, 95%, 0.7);
-$light-gray-person: hsl(210, 46%, 95%, 0.5);
-$dark-grayish-blue-paragraph: hsl(217, 19%, 35%, 0.7);
-$dark-grayish-blue-person: hsl(217, 19%, 35%, 0.5);
+$light-gray-70: hsl(210, 46%, 95%, 0.7);
+$light-gray-50: hsl(210, 46%, 95%, 0.5);
+$dark-grayish-blue-70: hsl(217, 19%, 35%, 0.7);
+$dark-grayish-blue-50: hsl(217, 19%, 35%, 0.5);
+
+$home-colors: (
+    gray: $gray, 
+    light-gray: $light-gray,
+    violet: $mod-violet,
+    dark-grayish-blue:  $dark-grayish-blue,
+    dark-blackish-blue: $dark-blackish-blue
+)

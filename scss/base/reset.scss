@@ -1,5 +1,6 @@
 @use '../abstract/mixins';
 @use '../abstract/colors';
+@use '../abstract/typography';
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -7,7 +8,8 @@
 }
 
 body {
-    @include mixins.default-font();
+    @include mixins.font(barlow-semi-condensed, medium);
+    font-size: typography.$default-fs;
     background-color: colors.$light-gray;
     margin: 0;
     padding: 0;
